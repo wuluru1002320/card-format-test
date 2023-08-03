@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<x<SUB>475</SUB> &le; 0.5<br/>friedman_mse = 0.223<br/>samples = 12000<br/>value = -0.0>, fillcolor="#f6d5bd"] ;
+1 [label=<x<SUB>238</SUB> &le; 0.5<br/>friedman_mse = 0.218<br/>samples = 11726<br/>value = -0.016>, fillcolor="#f6d5be"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<x<SUB>306</SUB> &le; 0.5<br/>friedman_mse = 0.212<br/>samples = 11465<br/>value = -0.031>, fillcolor="#f7d6bf"] ;
+1 -> 2 ;
+3 [label=<friedman_mse = 0.206<br/>samples = 11216<br/>value = -0.138>, fillcolor="#f7dbc6"] ;
+2 -> 3 ;
+4 [label=<friedman_mse = 0.008<br/>samples = 249<br/>value = 1.962>, fillcolor="#e5823b"] ;
+2 -> 4 ;
+5 [label=<x<SUB>6562</SUB> &le; 0.5<br/>friedman_mse = 0.004<br/>samples = 261<br/>value = 0.661>, fillcolor="#f1b991"] ;
+1 -> 5 ;
+6 [label=<friedman_mse = 0.0<br/>samples = 260<br/>value = 1.986>, fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label=<friedman_mse = -0.0<br/>samples = 1<br/>value = -1.004>, fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label=<friedman_mse = -0.0<br/>samples = 274<br/>value = 1.986>, fillcolor="#e58139"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
